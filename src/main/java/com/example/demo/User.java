@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
+import com.example.demo.HtmlBuilder;
 
 /**
 #user  
@@ -41,13 +42,10 @@ public class User {
     @ResponseBody
     public String MainPage (@RequestParam("login") String login){
         System.out.println("user");
-        String text = new String();
-        text = "<!DOCTYPE html>\n<html lang = \"ru\">\n\t<head>\n\t\t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n\t\t<title>WriToom - " +
-                login + "</title>\n\t</head>\n\t<body>\n\t\t<p>Добро пожаловать, " +
-                login + "!</p>\n\t</body>\n</html>";
+        String text = HtmlBuilder.UserPageMake(login);
         //ModelAndView tmp = new ModelAndView();
         //tmp.setViewName("user_page.html");
-        System.out.println("text");
+        System.out.println(text);
         return text;
     }
 }

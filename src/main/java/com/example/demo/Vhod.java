@@ -38,8 +38,9 @@ public class Vhod {
         
         if(login != null && password != null){
         
- 
+            System.out.println("registration end ");
             return new ModelAndView("redirect:/user?login=" + login);
+            
         }
         
         ModelAndView tmp = new ModelAndView();
