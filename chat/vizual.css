@@ -1,0 +1,64 @@
+html { 
+    background-blend-mode:overlay;
+    display:flex;
+    justify-content:center;
+    background: linear-gradient(178.87deg, #575D6C 0.91%, #7C97CA 98.99%);
+    background-repeat:no-repeat;
+    height: 100%;
+    align-content: flex-start;
+  }
+
+.registration-cssave form {
+    max-width:400px;
+    padding:0px 70px;
+    border-radius:15px;
+    justify-content: center;
+    text-align: center;
+    
+  }
+.registration-cssave form h3 {
+    font-weight: block;
+    margin-bottom:30px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+    color: #000000;
+    align-items: center;  
+  }
+  
+.registration-cssave .item {
+    border-radius:15px;
+    margin-bottom:25px;
+    padding:10px 20px;
+    width: 200px;
+    height: 15px;
+    background: #FFFFFF; 
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+.registration-cssave .create-account {
+    border-radius:15px;
+    padding:5px 20px;
+    font-size:18px;
+    font-weight:bold;
+    background-color:#ffffff;
+    border:none;
+    color: #000000;
+    font-family: 'Montserrat';
+    font-style: normal;
+    line-height: 22px;
+    width: 100px;
+    height: 35px;
+  }
+.exmpl img {
+    display: flex;
+    position: absolute;
+    /* background-color: #000000;
+    border-radius:15px;
+    width: 32px;
+    height: 32px;
+    box-shadow: 32px #000000; */
+}
