@@ -14,47 +14,71 @@
     */
 package com.example.demo;
 
+import java.io.IOException;
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.ModelAndView;
 
 
-
-//http://localhost:8080/reg
+//http://localhost:8080
 @RestController
 public class Vhod {
+    private String main_page = "reg.html";
     @GetMapping("/")
     @ResponseBody
-    public ModelAndView registration (HttpServletRequest request){
+    public ModelAndView StartingPage (HttpServletRequest request) throws IOException{
         
         System.out.println("registration start ");
+        this.main_page = "reg.html";
+        
+        ApiGlobals.Base.Log();
+        
         String login = request.getParameter("login");
         System.out.println("login: " + login);
         String password = request.getParameter("password");
         System.out.println("password: " + password);
         
         if(login != null && password != null){
-        
- 
-            return new ModelAndView("redirect:/user?login=" + login);
+            
+            System.out.println("password hash: " + password.hashCode());
+            System.out.println("login hash: " + login.hashCode());
+            System.out.println("registration end ");
+            return new ModelAndView("redirect:/init?token=" + ApiGlobals.GetHash(login, password)
+            + "&login=" + login);
+            
         }
         
         ModelAndView tmp = new ModelAndView();
-        tmp.setViewName("reg.html");
+        tmp.setViewName(main_page);
         System.out.println("registration end ");
         return tmp;
     }
-    @GetMapping("/auth")
+    @GetMapping("/init")
     @ResponseBody
-    public String auth (HttpServletRequest request){
-        String login = request.getParameter("login");
-        String password_hash = request.getParameter("password_hash");
-        String token = new String();//Както получим
-        System.out.println("auth");
-        return "<html>\n" + "<header><title>Welcome</title></header>\n" +
-          "<body>\n" + "Hello world\n" + "</body>\n" + "</html>";
-    }  
+    public ModelAndView UserInit (@RequestParam("token") String token,
+                            @RequestParam("login") String login) throws IOException{
+        System.out.println("initialization");
+        this.main_page = "reg.html";
+        if(ApiGlobals.Base.checkLogin(login)){
+            if(ApiGlobals.Base.checkUser(token)){
+                System.out.println(ApiGlobals.Base.getUserLogin(token) + " entered!");
+            }
+            else
+            {
+                this.main_page = "reg_1.html";
+                System.out.println("login \"" + login +  "\"already exist!");
+                return new ModelAndView("redirect:/");
+            }
+        }
+        else{
+            
+            ApiGlobals.Base.addUser(token, login);
+        }
+        
+        return new ModelAndView("redirect:/user?token=" + token);
+    }
 }
