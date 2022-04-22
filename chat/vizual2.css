@@ -1,0 +1,498 @@
+html { 
+    background-blend-mode:overlay;
+    display:flex;
+    justify-content:center;
+    position: absolute;
+    width: 1600px;
+    height: 900px;
+    left: 0px;
+    top: 0px;
+    background: #575D6C;
+  }
+
+.line-1 {
+    height: 5px;
+    left: 1px;
+    position: absolute;
+    top: 237px;
+    width: 212px;
+  }
+  
+  .line-3 {
+    height: 5px;
+    left: 2px;
+    position: absolute;
+    top: 170px;
+    width: 214px;
+  }
+
+  .line-2 {
+    height: 5px;
+    left: 3px;
+    position: absolute;
+    top: 342px;
+    width: 214px;
+  }
+
+.leftmenu {
+    position: absolute;
+    width: 216px;
+    height: 900px;
+    left: -2px;
+    top: 0px;
+    background: #3E3C3C;
+}
+.vhodvsistemu {
+    position: absolute;
+    width: 141px;
+    height: 22px;
+    left: 53px;
+    top: 239px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+
+}
+.codeRoom {
+    position: absolute;
+    width: 166px;
+    height: 30px;
+    left: 24px;
+    top: 278px;
+    background: #FFFFFF;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+
+.sozdatcomnatu {
+    position: absolute;
+    width: 157px;
+    height: 22px;
+    left: 37px;
+    top: 361px;
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.nazvaniecomnatu {
+    position: absolute;
+    width: 175px;
+    height: 23px;
+    left: 32px;
+    top: 397px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+.createRoom {
+    position: absolute;
+    width: 166px;
+    height: 30px;
+    left: 23px;
+    top: 440px;
+
+    background: #FFFFFF;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.centermenu {
+    text-align: center;
+    position: absolute;
+    left: 33.62%;
+    right: 33%;
+    top: -0.11%;
+    bottom: 0.11%;
+    background: #C4C4C4;
+}
+.nastroikiuser {
+    position: absolute;
+    width: 181px;
+    height: 25px;
+    left: 8px;
+    top: 194px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration:nome;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.line-4 {
+    position: absolute;
+    width: 899px;
+    height: 0px;
+    left: 214px;
+    top: 900px;
+
+    border: 4px solid #585454;
+    transform: rotate(-89.87deg);
+}
+.dimapidor {
+    position: absolute;
+    width: 152px;
+    height: 87px;
+    left: 31px;
+    top: 800px; }
+.ramkaroom {
+    width: 534px;
+    height: 73px;
+    display: flex;
+
+    background: #4A4A4A;
+}
+.nameuser {
+    position: absolute;
+    width: 113px;
+    height: 29px;
+    left: 30px;
+    top: 110px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+    white-space: nowrap;
+    color: #FFFFFF;
+}
+.avatar {
+    position: absolute;
+    width: 94px;
+    height: 94px;
+    left: 60px;
+    top: 26px;
+    border-radius: 50px;
+    background: #C4C4C4; 
+}
+
+.nameRoomUser {
+    position: absolute;
+    width: 98px;
+    height: 31px;
+    left: 15px;
+    top: 8px;
+    white-space: nowrap;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+.bottonvhod {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 490px;
+    top: 23px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid rgb(255, 255, 255);
+
+}
+.strelkavhoda {
+    position: absolute;
+    left: 13.33%;
+    right: 32.5%;
+    top: 30%;
+    bottom: 30.42%;
+}
+button:hover {
+	background: rgba(255, 255, 255, 0);
+	color: #ffffff;
+	box-shadow: inset 0 0 0 3px #ffffff;
+}
+/* @import url("https://fonts.googleapis.com/css?family=Montserrat:700,500");
+
+.desktop-3 {
+  align-items: flex-start;
+  background-color: var(--white);
+  display: flex;
+  overflow: hidden;
+  width: 1600px;
+}
+
+.hidden,
+.hidden * {
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.overlap-group {
+  height: 900px;
+  margin-left: -2px;
+  margin-top: -0.5px;
+  position: relative;
+  width: 1602px;
+}
+
+.rectangle-6 {
+  background-color: 
+#575d6c;
+  height: 900px;
+  left: 2px;
+  position: absolute;
+  top: 0;
+  width: 1600px;
+}
+
+.line-1 {
+  height: 5px;
+  left: 1px;
+  position: absolute;
+  top: 237px;
+  width: 212px;
+}
+
+.line-3 {
+  height: 5px;
+  left: 2px;
+  position: absolute;
+  top: 170px;
+  width: 214px;
+}
+
+.text-10 {
+  left: 889px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 104px;
+  width: 116px;
+}
+
+.rectangle-30 {
+  background-color: var(--mist-gray);
+  border-radius: 10px;
+  height: 35px;
+  left: 1024px;
+  position: absolute;
+  top: 18px;
+  width: 35px;
+}
+
+.rectangle-29 {
+  height: 73px;
+  left: 538px;
+  position: absolute;
+  top: 76px;
+  width: 534px;
+}
+
+.text-3 {
+  left: 17px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 194px;
+  width: 181px;
+}
+
+.text-9 {
+  left: 889px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 28px;
+  width: 116px;
+}
+
+.text-1 {
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-xl);
+  font-weight: 500;
+  left: 1395px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 304px;
+  width: 92px;
+}
+
+.text-6 {
+  left: 42px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 256px;
+  width: 141px;
+}
+
+.rectangle-31 {
+  background-color: var(--mist-gray);
+  border-radius: 10px;
+  height: 35px;
+  left: 1024px;
+  position: absolute;
+  top: 96px;
+  width: 35px;
+}
+
+.text-4 {
+  left: 34px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 362px;
+  width: 157px;
+}
+
+.outline-interface-arrow-right {
+  height: 30px;
+  left: 1029px;
+  position: absolute;
+  top: 20px;
+  width: 30px;
+}
+
+.rectangle-7 {
+  background-color: 
+#3d3c3c;
+  height: 900px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 216px;
+}
+
+.text-7 {
+  left: 569px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 20px;
+  width: 98px;
+}
+
+.text-8 {
+  left: 569px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 98px;
+  width: 98px;
+}
+
+.line-4 {
+  height: 899px;
+  left: 214px;
+  position: absolute;
+  top: 1px;
+  width: 6px;
+}
+
+.icon {
+  height: 12px;
+  left: 1033px;
+  position: absolute;
+  top: 106px;
+  width: 16px;
+}
+
+.logo {
+  height: 87px;
+  left: 33px;
+  object-fit: cover;
+  position: absolute;
+  top: 800px;
+  width: 152px;
+}
+
+.rectangle-27 {
+  background-color: var(--mist-gray);
+  height: 900px;
+  left: 538px;
+  position: absolute;
+  top: 0;
+  width: 534px;
+}
+
+.codeRoom {
+  height: 30px;
+  left: 26px;
+  position: absolute;
+  top: 279px;
+  width: 166px;
+  background-color: aliceblue;
+}
+
+.text-2 {
+  left: 62px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 120px;
+  width: 113px;
+}
+
+.line-2 {
+  height: 5px;
+  left: 3px;
+  position: absolute;
+  top: 342px;
+  width: 214px;
+}
+
+.rectangle-28 {
+  height: 72px;
+  left: 538px;
+  position: absolute;
+  top: 0;
+  width: 534px;
+}
+
+.text-5 {
+  color: var(--white);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-m);
+  font-weight: 500;
+  left: 28px;
+  letter-spacing: 0;
+  position: absolute;
+  top: 398px;
+  width: 175px;
+}
+
+.memoji-boys-7-30 {
+  height: 81px;
+  left: 68px;
+  object-fit: cover;
+  position: absolute;
+  top: 34px;
+  width: 81px;
+}
+
+.ellipse-5 {
+  background-color: var(--mist-gray);
+  border-radius: 47px;
+  height: 94px;
+  left: 62px;
+  position: absolute;
+  top: 26px;
+  width: 94px;
+}
+
+.nameRoom {
+    height: 30px;
+    left: 25px;
+    position: absolute;
+    top: 426px;
+    width: 166px;
+} */
